@@ -22,7 +22,7 @@ class DigitalTimer extends Component {
     const seconds = Math.floor(remainSeconds % 60)
     const stringifiedMin = minutes > 9 ? minutes : `0 ${minutes}`
     const stringifiedSec = seconds > 9 ? seconds : `0 ${seconds}`
-    return `${stringifiedMin} : ${stringifiedSec} `
+    return `${stringifiedMin}:${stringifiedSec} `
   }
 
   setTimer = () => {
