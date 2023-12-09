@@ -21,7 +21,7 @@ class DigitalTimer extends Component {
     const minutes = Math.floor(remainSeconds / 60)
     const seconds = Math.floor(remainSeconds % 60)
     const stringifiedMin = minutes > 9 ? minutes : `0 ${minutes}`
-    const stringifiedSec = minutes > 9 ? seconds : `0 ${seconds}`
+    const stringifiedSec = seconds > 9 ? seconds : `0 ${seconds}`
     return `${stringifiedMin} : ${stringifiedSec} `
   }
 
